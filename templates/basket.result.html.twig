@@ -1,0 +1,6 @@
+<ul class="list-group">
+	<li class="list-group-item list-group-item-success">Result</li>
+	<li class="list-group-item">Your Country: {{ basket.country.name }}</li>
+	<li class="list-group-item">Your VAT: {{ basket.country.vat }}%</li>
+	<li class="list-group-item">Your Final Price: {{ basket.finalPrice | number_format(2, '.') }} €</li>
+</ul>

@@ -1,0 +1,17 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+	<div class="container py-4">
+		<header class="pb-3 mb-4 border-bottom">
+			<h3>Very Simple Shop Basket Example</h3>
+		</header>
+		<turbo-frame id="basket_frame">
+			{{ form(form) }}
+			<div id="basket_result">
+				{% if basket %}
+				{% include 'basket.result.html.twig' %}
+				{% endif %}
+			</div>
+		</turbo-frame>
+	</div>
+{% endblock %}
